@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,700&display=swap');
+
+
+html, body {
+  margin: 0;
+  padding: 0; 
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f0f0; 
+}
+
+/* Header Styles */
+.header {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  background-color: cadetblue;
+}
+
+/* Title Styles */
+.title {
+  padding: 50px 25px;
+  text-align: center;
+}
+
+/* Heading Styles */
+h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+/* Image Styles */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive Styles for Large Viewports (960px or larger) */
+@media (min-width: 960px) {
+  .header {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
